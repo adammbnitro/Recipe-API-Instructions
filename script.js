@@ -1,6 +1,8 @@
 var search;
 var rID;
 
+
+
 // function searchRecipe(){
 // 	const settings = {
 // 		"async": true,
@@ -67,10 +69,37 @@ searchInput.on("click", function(){
 			};
 			
 			$.ajax(settings).done(function (response) {
-				let id = response.results[0].id;
-		
-				console.log(id);
+				// let id = response.results[0].id;
+
 				console.log(response);
+			
+				let recipeResults = response.results;
+
+				console.log(recipeResults.length);
+
+				
+
+				for(let i = 0; i < 10; i++){
+
+					let recipeDiv = $("div");
+					// let recipeElement = $("<h1>");
+					let recipeImageElement = $("<img>");
+				
+
+					let recipeTitle = recipeResults[i].title;
+					recipeImageElement.attr("src", recipeResults[i].image);
+
+					recipeDiv.append(recipeImageElement);
+
+					recipeDiv.append(recipeTitle);
+
+					$("#results").append(recipeDiv);
+
+
+
+				}
 			});
+	
+	
 	
 })
