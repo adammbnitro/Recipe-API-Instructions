@@ -1,5 +1,6 @@
 var search;
 var rID;
+var resultsElement = $("#results");
 
 
 
@@ -53,9 +54,8 @@ var rID;
 var searchInput = $("#btnInput");
 
 searchInput.on("click", function(){
+	// resultsElement.empty();
 	let input = $("#searchBar").val();
-
-	console.log(input);
 
 	const settings = {
 				"async": true,
@@ -75,25 +75,21 @@ searchInput.on("click", function(){
 			
 				let recipeResults = response.results;
 
-				console.log(recipeResults.length);
+				console.log(recipeResults[0]);
 
-				
+				for(let i = 0; i < recipeResults.length; i++){
 
-				for(let i = 0; i < 10; i++){
+					let dataHolder = $("<div>");
+        			let dataImage = $("<img>");
 
-					let recipeDiv = $("div");
-					// let recipeElement = $("<h1>");
-					let recipeImageElement = $("<img>");
-				
+        			let recipeTitle = recipeResults[i].title;
+        			dataImage.attr("src", recipeResults[i].image);
 
-					let recipeTitle = recipeResults[i].title;
-					recipeImageElement.attr("src", recipeResults[i].image);
+        			dataHolder.append(dataImage);
 
-					recipeDiv.append(recipeImageElement);
+        			dataHolder.append(recipeTitle);
 
-					recipeDiv.append(recipeTitle);
-
-					$("#results").append(recipeDiv);
+        			resultsElement.append(dataHolder);
 
 
 
