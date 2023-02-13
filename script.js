@@ -89,7 +89,9 @@ searchInput.on("click", function(){
         			let recipeTitle = recipeResults[i].title;
         			dataImage.attr("src", recipeResults[i].image);
 
-					dataHolder.addClass('col-4')
+					dataHolder.addClass('col-4');
+					dataHolder.addClass('p-5');
+
         			dataHolder.append(dataImage);
 
         			dataHolder.append(recipeTitle);
