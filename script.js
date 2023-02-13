@@ -54,7 +54,7 @@ function searchInstructions(){
 var searchInput = $("#btnInput");
 
 searchInput.on("click", function(){
-	// resultsElement.empty();
+	resultsElement.empty();
 	let input = $("#searchBar").val();
 
 	const settings = {
@@ -89,6 +89,7 @@ searchInput.on("click", function(){
         			let recipeTitle = recipeResults[i].title;
         			dataImage.attr("src", recipeResults[i].image);
 
+					dataHolder.addClass('col-4')
         			dataHolder.append(dataImage);
 
         			dataHolder.append(recipeTitle);
