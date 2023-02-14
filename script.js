@@ -52,16 +52,15 @@ $(document).ready(function(){
     
     $('form').submit(function(event){
         event.preventDefault();
-
+        //get user input but this can be chnaged to get the recipe title from he API
         var userInput = $('#user-input').val()
 
         videoSearch(apiKey, userInput,1);
 
     })
 
-
     function videoSearch(apiKey,userInput,max){
-
+        
         $.ajax({
             url: "https://www.googleapis.com/youtube/v3/search?key=" + apiKey +"&type=video&part=snippet&maxResults=" + max + "&q=" + userInput  ,
             method: "GET"
