@@ -5,7 +5,9 @@ font-family: 'Ubuntu', sans-serif;
 */
 
 body {
-background-color: rgb(122, 122, 122);
+background: linear-gradient(#bdc3c7, #2c3e50);
+}
+/* background-color: rgb(122, 122, 122); *
 }
 
 /* Header*/
@@ -17,6 +19,10 @@ h1 {
     font-family: 'Lobster', cursive;
     font-size: 62px;
     color: rgb(232, 43, 43);
+}
+
+h1:hover {
+    text-decoration: 7px solid black underline;
 }
 
 h1::after {
