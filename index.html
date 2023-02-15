@@ -6,20 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Recipe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lobster&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd8e817afe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <header>
-    <h1>Home/Page Name</h1><!--Page title, Logo can be added in css-->
+    <h1>Recipe Finder</h1><!--Page title, add logo.-->
     <nav>
         <ul>
-            <li><a href=index.html>Home</a></li>
+            <li class="home-nav"><a href=index.html><span class="home">Home</a></li></span>
             <li><a href=videos.html>Videos</a></li>
             <li><a href=about.html>About</a></li>
         </ul>
     </nav>
 
+<<<<<<< HEAD
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(./images/jumbotron.jpg); background-size: 100%; background-repeat: no-repeat;"><br>
+        <div class="banner-container">
+            <h2 class="banner display-4 text-center" style="color: white;">Finding Recipes has never been easier!</h2>
+            <div class="text-image-header">
+            <h2 class="banner-text col-lg-11 display-4 text-center">Try our recipe search!</h2>
+            <button class="search-button btn-lg btn-danger btn align-center" role="button">Find a Recipe</button>
+        </div>
+        </div>
+        
+=======
     <div class="jumbotron">
         <h2 class="display-4">Finding Recipes has never been easier!</h2>
        <!---- <img id="header-image" alt=""> -->
@@ -27,12 +42,26 @@
             <h2>Finding Recipes has never been easier!</h2>
         </div>
         <a class="btn btn-primary btn-lg" href="#" role="button">Find a Recipe</a>
+>>>>>>> main
     </div>
 </header>
 
     <main> <!--Main section-->
        <!--Area containing the textbox, with an image on the right--> 
         <section class="main-section-container">
+<<<<<<< HEAD
+            <div class="main-section-content"> <!--box with text-->
+                <h2 class="main-section-title"><span class="firstline-main-section-title">Let's get started!</span><br> What would you like to cook?</h2>
+                <p><br>Finding a recipe is really simple, just type in what you want to make in the search-bar, then click the search button! </p><br>
+            <div class="inputs-main">
+                <input type="search" class="recipe-searchbar" placeholder="Pancakes">
+                <button class="input-button">Search</button>
+            </div>
+                </div>
+
+            <div class="main-section-content food-image"> <!--Box with image-->
+            <!--<img class="" alt="image of food"> An image, can be added using css or HTML-->
+=======
             <div class="main-section-content">
                 <h2>Get Started!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit hic voluptas porro dicta eligendi.</p>
@@ -43,24 +72,44 @@
 
             <div class="main-section-content">
             <img id="" alt="image of food"> <!--An image, can be added using css or HTML-->
+>>>>>>> main
         </section>
 
         <!--section of three image boxes, with buttons-->
+        <h3 class="images-title">Let's get cooking! What are you making today?</h3>
         <section class="main-images-container">
             <div class="main-images">
-                <button>Dinner Recipes</button>
+                <button class="image-buttons">Dinner Recipes</button>
             </div>
             <div class="main-images">
-                <button>Dessert Recipes</button>
+                <button class="image-buttons">Dessert Recipes</button>
             </div>
-            <div class="main-images"></div>
-                <button>Breakfast Recipes</button>
+            <div class="main-images">
+                <button class="image-buttons">Lunch Recipes</button>
+            </div>
 
         </section>
     </main>
 
 <footer>
-
+    <div class="card">
+        <div class="card-header bg-danger">
+          Thank you for using the Recipe Finder
+        </div>
+        <div class="card-body bg-muted">
+          <div class="newsletter">
+            <h5 class="card-title">Follow us on social media and join our newsletter to recieve new recipe ideas each week!</h5>
+            <p class="card-text"> Join Our Newsletter<input type="text" placeholder="Email address" name="email"></input></p>
+            <button class="newsletter-button btn-sm btn-dark" role="button">Submit</a>
+          </div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/adammbnitro/Recipe-API-Instructions">Github</a>&nbsp;<i class="fa-brands fa-github"></i></li>
+            <li><a href="https://www.instagram.com/">Instagram</a>&nbsp;<i class="fa-brands fa-instagram"></i></li>
+            <li><a href="https://twitter.com/home">Twitter</a>&nbsp;<i class="fa-brands fa-twitter"></i></li>
+          </ul>
+          
+        </div>
+      </div>
 </footer>
 
 <link rel="stylesheet" href=""> <!--bootstrap-->
