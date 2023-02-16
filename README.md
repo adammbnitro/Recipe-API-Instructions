@@ -4,22 +4,14 @@
 
 Create an interactive 
 - What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+Create an interactive site that was able to locate recipes using the names/ingredients/food type when searched. 
+- Why did you build this project? 
+To collate recipes from various apis under one page, making it easily accessible, thus cutting off the need to go through many pages of Google Search etc. 
 - What problem does it solve?
+A user is able to access a library of recipes via the api setup on a simple basic web interface.
 - What did you learn?
 
-## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 ## Usage
 
@@ -28,16 +20,34 @@ Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![main search bar]()
     ```
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
+    Adam
+    https://github.com/adammbnitro
+    
+    Abiskar 
+    https://github.com/ARbayung
+    
+    Aisha
+    https://github.com/AishaSK
+    
+    Alice
+    https://github.com/AliceAngelica
+    
+    Adnan
+    https://github.com/adnan12398
+    
+    Augoye
+    https://github.com/Themchief
+    
+    ## Third-party assets 
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+    
+    ## Tutorials
 
 ## License
 
@@ -47,12 +57,12 @@ MIT License
 
 ## Badges
 
-## Features
+## Features include:
 
-Used Bootstrap.
+We have Used Bootstrap.
 
 Has been deployed to GitHub Pages:
-link>
+link> https://github.com/
 
 Is interactive (in other words, accept and respond to user input).
 
@@ -74,12 +84,6 @@ Has a quality README (including a unique name, description, technologies used, s
 
 
 
-
-
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
