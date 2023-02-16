@@ -2,51 +2,49 @@
 
 ## Description
 
-- What was your motivation?
+ 
+- #### What was your motivation?
 Create an interactive site that was able to locate recipes using the names/ingredients/food type when searched. 
-- Why did you build this project? 
+- #### Why did you build this project? 
 To collate recipes from various apis under one page, making it easily accessible, thus cutting off the need to go through many pages of Google Search etc. 
-- What problem does it solve?
+- #### What problem does it solve?
 A user is able to access a library of recipes via the api setup on a simple basic web interface.
-- What did you learn?
+- #### What did you learn? 
+Throughout this project, we have learnt how to collaborate as a team using Git to ensure our application works seamlessly across all of our changes and commits. Additionally, we have gained more knowledge surrounding the topics covered in the Bootcamp as we have had to apply them in a time-constrained project
 
 
 ## Credits
 
 Collaborators:
-
+    
     Adam
-
     https://github.com/adammbnitro
     
-    Abiskar
-
+    Abiskar 
     https://github.com/ARbayung
     
     Aisha
-
     https://github.com/AishaSK
     
     Alice
-
     https://github.com/AliceAngelica
     
     Adnan
-
     https://github.com/adnan12398
     
     Augoye
-
     https://github.com/Themchief
-    
-    ## Third-party assets 
+
+## Third-party assets 
 
     
-    ## Tutorials
+## Tutorials
 
 ## License
 
-MIT License
+Copyright (c). All rights reserved.
+
+Licensed under the MIT license.
 
 ---
 
@@ -54,22 +52,21 @@ MIT License
 
 ## Features include:
 
-We have Used Bootstrap.
+We have used Bootstrap.
 
-Has been deployed to GitHub Pages : https://adammbnitro.github.io/Recipe-API-Instructions/
-Link to repo:  https://github.com/adammbnitro/Recipe-API-Instructions
+The project has been deployed to GitHub Pages: https://github.com/
 
-Is interactive (in other words, accept and respond to user input).
+The application is interactive (in other words, accept and respond to user input).
 
-We have used two server-side APIs Links to an external site..
+We have used two server-side APIs.
 
-Have used modals instead of alerts, confirms, or prompts.
+We have used modals instead of alerts, confirms, or prompts.
 
 We used client-side storage to store persistent data.
 
-Is super responsive.
+We have ensured the application is super responsive.
 
-Has a polished UI.
+The application has a polished UI.
 
 Has a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
 
@@ -77,9 +74,14 @@ Has a quality README (including a unique name, description, technologies used, s
 
 ## Screenshots
 
+Main page:
 
+![screenshot of main recipe page](./images/main-page-screenshot.png)
 
+Videos page:
 
-## Tests
+![screenshot of recipe videos page](./images/videos-page-screenshot.png)
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+About us page:
+
+![screenshot of about us page](./images/about-us-page-screenshot.png)
