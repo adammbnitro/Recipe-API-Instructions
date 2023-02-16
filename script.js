@@ -1,3 +1,20 @@
+
+// This code is for the scroll to top button on the main page
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('.scroll-to-top').fadeIn();
+    } else {
+        $('.scroll-to-top').fadeOut();
+    }
+});
+
+$('.scroll-to-top').click(function() {
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+});
+// --------------------------------------------------------
+
 var search;
 var rID;
 
