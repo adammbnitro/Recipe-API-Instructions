@@ -331,6 +331,7 @@ input[type="email"]:focus {
     background-color: #cc0000;
     border: none;
     color: #fff;
+    transition: 1s ease-in-out all;
   }
 
 .input-group-append button:hover {
