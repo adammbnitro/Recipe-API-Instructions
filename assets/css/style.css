@@ -23,6 +23,7 @@ h1 {
 
 h1:hover {
     text-decoration: 7px solid black underline;
+    transition: all 2s ease-in;
 }
 
 h1::after {
@@ -74,9 +75,14 @@ li a {
     color:white;
 }
 
+.home:hover {
+    color: rgb(232, 43, 43);
+}
+
 a:hover {
 color:rgb(232, 43, 43);
 text-decoration: none;
+transform: translateY(-3px);
 }
 
 /* End of Nav*/
@@ -119,6 +125,7 @@ header .jumbotron {
 .search-button {
     position: absolute;
     top: 270px;
+    transition: all 1s ease-in-out;
 }
 
 .text-image-header {
@@ -146,15 +153,25 @@ main {
 .main-section-content {
     width: 700px;
     height: 300px;
-    background-color: black;
+    background: linear-gradient(#232526, #414345);
     color: white;
     border-radius: 8px;
     padding: 18px;
+    box-shadow: 7px 4px 4px rgb(61, 61, 61);
     
 }
 
 .food-image {
     background-image: url(../../images/pancakes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 2s ease-in-out;
+    box-shadow: 7px 4px 4px rgb(61, 61, 61);
+}
+
+.food-image:hover {
+    background-image: url(../../images/lasagne.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -171,19 +188,29 @@ main {
 
 .recipe-searchbar {
     border: 2px solid white;
+    box-shadow: 7px 4px 4px rgb(0, 0, 0);
+    border-radius: 3px;
+    
 }
 
 .input-button {
     background-color: rgb(232, 43, 43);
     color: white;
+    box-shadow: 4px 4px 4px rgb(121, 26, 26);
+}
+
+.input-button:hover {
+    box-shadow: 4px 4px 4px white;
+    cursor: pointer;
 }
 
 button {
     border-radius: 5px;
-    border: 2px solid white;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(232, 43, 43);
     font-weight: 600;
+    transition: 1s all ease;
+    box-shadow: 8px 5px 5px rgb(54, 53, 53);
 }
 
 button:active {
@@ -193,6 +220,9 @@ button:active {
 button:hover {
     color: white;
     background-color: black;
+    transform: translateY(5px);
+    box-shadow: 8px 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 /* Three image boxes */
@@ -204,8 +234,8 @@ button:hover {
     padding: 5px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
-    color: rgb(232, 43, 43);
-    background-color: rgba(32, 32, 32, 0.7);
+    color: white;
+    background: linear-gradient(#232526, #323232);
     padding: 15px;
 
 }
@@ -235,6 +265,13 @@ p {
     position: relative;
     border-radius: 50%;
     border: 10px solid white;
+    transition: all 1s ease-in-out;
+    box-shadow: 7px 4px 4px rgb(61, 61, 61);
+}
+
+.main-images:hover {
+    transform: translateY(3px);
+    cursor: pointer;
 }
 
 .image-buttons {
@@ -265,17 +302,52 @@ p {
     background-size: cover;
 }
 
-/* Footer */
+/* Newsletter section */
 
-footer {
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+
+label {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+input[type="email"]:focus {
+    border: 1px solid #cc0000;
+    outline: none;
+  }
+
+.input-group-append button {
+    background-color: #cc0000;
+    border: none;
+    color: #fff;
+    transition: 1s ease-in-out all;
+  }
+
+.input-group-append button:hover {
+    background-color: #990000;
+  }
+
+h2{
     font-family: 'Ubuntu', sans-serif;
-}
+  }
+
+  /* Card with thank you message section  */
 
 .card {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 5px solid black;
 }
 
 .card-title {
@@ -287,22 +359,32 @@ footer {
     border: 5px solid black;
 }
 
-.newsletter {
-    margin-left: 0;
-    width: 1448px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
+/* Scroll to top section */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    z-index: 9999;
 }
 
-.newsletter-button {
-    width: 90px;
-    align-self: center;
-    position: absolute;
-    bottom: 15px;
-    right: 477px;
+.scroll-to-top:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
+/* Footer section */
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .footer-links {
@@ -312,5 +394,19 @@ footer {
     justify-content: space-evenly;
     list-style: none;
     font-weight: 500;
+    padding-top: 10px;
 }
+
+.findInstructions{
+    display: block;
+    width: 115px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}    
 
