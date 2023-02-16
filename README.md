@@ -2,7 +2,6 @@
 
 ## Description
 
-Create an interactive 
 - What was your motivation?
 Create an interactive site that was able to locate recipes using the names/ingredients/food type when searched. 
 - Why did you build this project? 
@@ -12,36 +11,32 @@ A user is able to access a library of recipes via the api setup on a simple basi
 - What did you learn?
 
 
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![main search bar]()
-    ```
-
 ## Credits
 
 Collaborators:
+
     Adam
+
     https://github.com/adammbnitro
     
-    Abiskar 
+    Abiskar
+
     https://github.com/ARbayung
     
     Aisha
+
     https://github.com/AishaSK
     
     Alice
+
     https://github.com/AliceAngelica
     
     Adnan
+
     https://github.com/adnan12398
     
     Augoye
+
     https://github.com/Themchief
     
     ## Third-party assets 
@@ -61,8 +56,8 @@ MIT License
 
 We have Used Bootstrap.
 
-Has been deployed to GitHub Pages:
-link> https://github.com/
+Has been deployed to GitHub Pages : https://adammbnitro.github.io/Recipe-API-Instructions/
+Link to repo:  https://github.com/adammbnitro/Recipe-API-Instructions
 
 Is interactive (in other words, accept and respond to user input).
 
