@@ -163,6 +163,7 @@ searchInput.on("click", function(){
 					button.attr("type","button")
 					
 					//adding bootstrap to objects
+					dataImage.addClass("resultsImg")
 					dataHolder.addClass('col');
 					dataHolder.addClass('p-5');
 					button.addClass('findInstructions');
