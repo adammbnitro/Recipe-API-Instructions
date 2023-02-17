@@ -43,24 +43,6 @@ function searchInstructions(dataHolder){
 		var ingredientsHolder = $("#ingredientsHolder")
 		var titleHolder = $("#titleHolder");
 
-		// //Getting instructions list through API
-		let loopLength = response.analyzedInstructions[0].steps;
-
-		for(let i = 0; i < loopLength.length; i++){
-			let step = response.analyzedInstructions[0].steps[i].step;
-			
-			// console.log(step);
-
-			let instructionLi = $("<li>");
-
-			instructionLi.attr("class","p-2");
-			
-			instructionLi.append(step);
-
-			instructionsHolder.append(instructionLi);
-
-		}
-
 		// Getting ingredients list through API
 		for(let i = 0; i < response.extendedIngredients.length; i++){
 			// console.log(response.extendedIngredients[i].name);
@@ -107,11 +89,28 @@ function searchInstructions(dataHolder){
 
 		titleHolder.append(title);
 
-		console.log(title);
+		// console.log(title);
 
-		if(instructionsHolder.val = null){
-			console.log("unable to find results try a different recipe.")
+		// //Getting instructions list through API
+		let loopLength = response.analyzedInstructions[0].steps;
+
+		for(let i = 0; i < loopLength.length; i++){
+			let step = response.analyzedInstructions[0].steps[i].step;
+			
+			// console.log(step);
+			if(response.analyzedInstructions.length < 0){
+			let instructionLi = $("<li>");
+			
+			instructionLi.append(step);
+
+			instructionsHolder.append(instructionLi);
+			}else{
+				instructionsHolder.append("No instructions for this recipe! SORRY! try a different recipe. :)");
+				return
+			}
+
 		}
+
 
 	});
 }
