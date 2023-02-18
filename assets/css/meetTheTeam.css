@@ -3,28 +3,28 @@ body {
     margin: 0;
   }
 
+  /* header */
 
-  h1 {
+  h1.page-title {
     text-align: center;
     width: 100%;
     padding: 10px;
     font-family: 'Lobster', cursive;
     font-size: 62px;
     color: rgb(232, 43, 43);
-}
-
-h1:hover {
-    text-decoration: 7px solid black underline;
-    transition: all 2s ease-in;
-}
-
-h1::after {
+  }
+  
+  h1.page-title:hover {
+    text-decoration: underline;
+  }
+  
+  h1.page-title::after {
     position: relative;
     content: url(../../images/logo.png);
     top: 6px;
     left: 7px;
-}
-
+  }
+  
   /* Nav Bar Styling */
 
 nav {
@@ -144,8 +144,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
+  background-color: #f2f2f2;
+  color: rgb(4, 4, 4);
 }
 
 .container {
@@ -161,6 +161,62 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 .title {
   color: grey;
 }
+
+
+
+
+/* Newsletter section */
+
+.newsletter {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+label {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="email"]:focus {
+  border: 1px solid #cc0000;
+  outline: none;
+}
+
+.input-group-append button {
+  background-color: #cc0000;
+  border: none;
+  color: #fff;
+  transition: 1s ease-in-out all;
+}
+
+.input-group-append button:hover {
+  background-color: #990000;
+}
+
+h2{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer section */
