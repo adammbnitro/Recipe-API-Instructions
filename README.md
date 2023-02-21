@@ -6,11 +6,11 @@
 - #### What was your motivation?
 Create an interactive site that was able to locate recipes using the names/ingredients/food type when searched. 
 - #### Why did you build this project? 
-To collate recipes from various apis under one page, making it easily accessible, thus cutting off the need to go through many pages of Google Search etc. 
+To collate recipes from various apis under one page, making it easily accessible, thus cutting off the need to go through many pages of Google Search etc.
 - #### What problem does it solve?
 A user is able to access a library of recipes via the api setup on a simple basic web interface.
 - #### What did you learn? 
-Throughout this project, we have learnt how to collaborate as a team using Git to ensure our application works seamlessly across all of our changes and commits. Additionally, we have gained more knowledge surrounding the topics covered in the Bootcamp as we have had to apply them in a time-constrained project
+Throughout this project, we have learnt how to collaborate as a team using Git to ensure our application works seamlessly across all of our changes and commits. Additionally, we have gained more knowledge surrounding the topics covered in the Bootcamp as we have had to apply them in a time-constrained project.
 
 
 ## Credits
@@ -35,10 +35,10 @@ Collaborators:
     Augoye
     https://github.com/Themchief
 
-## Third-party assets 
+    Adesoye
+    https://github.com/giorhodes
 
-    
-## Tutorials
+## Third-party assets 
 
 ## License
 
