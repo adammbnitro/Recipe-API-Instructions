@@ -90,7 +90,25 @@
             <div class="input-group">
                 <input type="email" class="form-control" id="email-input" placeholder="Enter your email address" required>
                 <div class="input-group-append">
-                <button class="btn btn-danger" type="submit">Subscribe</button>
+                <button type=button class="btn btn-danger" data-toggle="modal" data-target="#subscribeModal" type="submit">Subscribe</button>
+                <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Welcome on board!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Welcome to our community of newsletter subscribers! You're now among the first to know about our latest updates, news, and promotions. Thank you for joining us!
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>
