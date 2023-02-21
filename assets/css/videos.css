@@ -181,6 +181,19 @@ text-decoration: none;
     
     .col-md-3 .btn-primary {
     background-color: #dc1414;
+
+    border: none
+    }
+
+#video{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+=======
     border: none;
     }
 
@@ -205,3 +218,4 @@ text-decoration: none;
       ul li {
         margin-bottom: 10px;
       }
+
