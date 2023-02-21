@@ -410,3 +410,14 @@ footer {
     text-align: center;
 }    
 
+.resultsImg{
+    border-radius: 5px;
+}
+
+.findInstructions{
+    height: 35px;
+    width: 94%;
+    text-align: center;
+    color: #cc0000;
+    transition: all 0.5s ease-in-out;
+}

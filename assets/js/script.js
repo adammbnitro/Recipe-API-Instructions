@@ -20,6 +20,78 @@ var resultsElement = $("#results");
 var searchInput = $("#btnInput");
 var recipeBtn = $("recipeLink");
 
+
+function searchRecipe(){
+    //API details
+	const settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query='+input,
+        "method": "GET",
+        "headers": {
+            "X-RapidAPI-Key": "020a1e0fa1mshf7a710d6a5d276bp1c379cjsnfe02e9854d05",
+            "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
+        }
+    };
+    
+    $.ajax(settings).done(function (response) {
+
+        console.log(response);
+    
+        let recipeResults = response.results;
+        
+
+        for(let i = 0; i < 9; i++){
+
+            let ID = response.results[i].id;
+
+            console.log(ID);
+            //pulling data from api
+            let number = [i + 1] + " ";
+
+            rID = response.results[i].id;
+            let recipeTitle = recipeResults[i].title;
+            
+            //elements for object
+            var dataHolder = $("<div>");
+            let dataImage = $("<img>");
+            let dataTitle = $("<h2>");
+            let button = $("<a>see recipe</a>")
+
+            //setting attributes to elements
+            dataImage.attr("src", recipeResults[i].image);
+            button.attr("href", "query.html");
+            button.attr("type","button")
+            
+            //adding bootstrap to objects
+            dataImage.addClass("resultsImg")
+            dataHolder.addClass('col');
+            dataHolder.addClass('p-5');
+            button.addClass('findInstructions');
+            button.attr("id",ID);
+
+            
+            //adding elements to html
+            dataTitle.append(number);
+
+            dataTitle.append(recipeTitle);
+
+            dataHolder.append(dataTitle);
+
+            dataHolder.append(dataImage);
+
+            dataHolder.append(button);
+
+            resultsElement.append(dataHolder);
+
+
+        }
+
+        find();
+        
+    });
+}
+
 function searchInstructions(dataHolder){
 	const settings = {
 		"async": true,
@@ -115,79 +187,16 @@ function searchInstructions(dataHolder){
 	});
 }
 
+var input;
+
 searchInput.on("click", function(){
 	//emptys results every time button is pressed
 	resultsElement.empty();
 	//gets search string from inputbox
-	let input = $("#searchBar").val();
+	input = $("#searchBar").val();
 
 	//API details
-	const settings = {
-				"async": true,
-				"crossDomain": true,
-				"url": 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?query='+input,
-				"method": "GET",
-				"headers": {
-					"X-RapidAPI-Key": "020a1e0fa1mshf7a710d6a5d276bp1c379cjsnfe02e9854d05",
-					"X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
-				}
-			};
-			
-			$.ajax(settings).done(function (response) {
-
-				console.log(response);
-			
-				let recipeResults = response.results;
-				
-
-				for(let i = 0; i < 9; i++){
-
-					let ID = response.results[i].id;
-
-					console.log(ID);
-					//pulling data from api
-					let number = [i + 1] + " ";
-
-					rID = response.results[i].id;
-					let recipeTitle = recipeResults[i].title;
-					
-					//elements for object
-					var dataHolder = $("<div>");
-        			let dataImage = $("<img>");
-					let dataTitle = $("<h2>");
-					let button = $("<a>see recipe</a>")
-
-					//setting attributes to elements
-        			dataImage.attr("src", recipeResults[i].image);
-					button.attr("href", "query.html");
-					button.attr("type","button")
-					
-					//adding bootstrap to objects
-					dataHolder.addClass('col');
-					dataHolder.addClass('p-5');
-					button.addClass('findInstructions');
-					button.attr("id",ID);
-
-					
-					//adding elements to html
-					dataTitle.append(number);
-
-					dataTitle.append(recipeTitle);
-
-					dataHolder.append(dataTitle);
-
-					dataHolder.append(dataImage);
-
-					dataHolder.append(button);
-
-        			resultsElement.append(dataHolder);
-
-
-				}
-
-				find();
-				
-			});
+	searchRecipe(input);
 	
 })
 
@@ -227,4 +236,42 @@ window.addEventListener("load", function(){
 	searchInstructions();
 
 
+})
+
+//---------------------------------------------------------------
+//BUTTONS FUNCTON
+
+var btn1 = $("#dinner");
+var btn2 = $("#dessert");
+var btn3 = $("#lunch");
+
+btn1.on("click", function(){
+    //emptys results every time button is pressed
+	resultsElement.empty();
+
+    input = "Pasta";
+    searchRecipe(input);
+
+    return
+})
+
+btn2.on("click", function(){
+    //emptys results every time button is pressed
+	resultsElement.empty();
+    
+    input = "dessert";
+    searchRecipe(input);
+
+    return
+    
+})
+
+btn3.on("click", function(){
+    //emptys results every time button is pressed
+	resultsElement.empty();
+
+    input = "sandwich";
+    searchRecipe(input);
+    
+    return
 })
