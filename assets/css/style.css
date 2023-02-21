@@ -397,3 +397,27 @@ footer {
     padding-top: 10px;
 }
 
+.findInstructions{
+    display: block;
+    width: 115px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}    
+
+.resultsImg{
+    border-radius: 5px;
+}
+
+.findInstructions{
+    height: 35px;
+    width: 94%;
+    text-align: center;
+    color: #cc0000;
+    transition: all 0.5s ease-in-out;
+}

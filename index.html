@@ -32,44 +32,51 @@
             <h2 class="banner display-4 text-center" style="color: white;">Finding Recipes has never been easier!</h2>
             <div class="text-image-header">
             <h2 class="banner-text col-lg-11 display-4 text-center">Try our recipe search!</h2>
-            <button class="search-button btn-lg btn-danger btn align-center" role="button">Find a Recipe</button>
+            <a href="#A" class="search-button btn-lg btn-danger btn align-center" role="button">Find a Recipe</a>
         </div>
         </div>
         
     </div>
 </header>
 
-    <main> <!--Main section-->
+    <main id="A"> <!--Main section-->
        <!--Area containing the textbox, with an image on the right--> 
         <section class="main-section-container">
             <div class="main-section-content"> <!--box with text-->
                 <h2 class="main-section-title"><span class="firstline-main-section-title">Let's get started!</span><br> What would you like to cook?</h2>
                 <p><br>Finding a recipe is really simple, just type in what you want to make in the search-bar, then click the search button! </p><br>
             <div class="inputs-main">
-                <input type="search" class="recipe-searchbar" placeholder="Pancakes">
-                <button class="input-button">Search</button>
+                <input id="searchBar" type="search" class="recipe-searchbar" placeholder="Pancakes">
+                <button id="btnInput">Search</button>
             </div>
                 </div>
 
             <div class="main-section-content food-image"> <!--Box with image-->
+            <!--<img class="" alt="image of food"> An image, can be added using css or HTML-->
         </section>
 
-        <!--section of three image boxes, with buttons-->
-        <h3 class="images-title">Let's get cooking! What are you making today?</h3>
-        <section class="main-images-container">
-            <div class="main-images">
-                <button class="image-buttons">Dinner Recipes</button>
-            </div>
-            <div class="main-images">
-                <button class="image-buttons">Dessert Recipes</button>
-            </div>
-            <div class="main-images">
-                <button class="image-buttons">Lunch Recipes</button>
-            </div>
+        <section>
+
+            <div id="results" class="row" style="background-color: #696969; color: white;"></div>
 
         </section>
+
     </main>
 
+    <!--section of three image boxes, with buttons-->
+    <h3 class="images-title">Let's get cooking! What are you making today?</h3>
+    <section class="main-images-container">
+        <div class="main-images">
+            <a id="dinner" class="image-buttons" href="#A">Pasta Recipes</a>
+        </div>
+        <div class="main-images">
+            <a id="dessert" class="image-buttons" href="#A">Dessert Recipes</a>
+        </div>
+        <div class="main-images">
+            <a id="lunch" class="image-buttons" href="#A">Sandwich Recipes</a>
+        </div>
+
+    </section>
 
 <!-- Newsletter section -->
 
@@ -120,6 +127,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="test.js"></script>
 </body>
 </html>
