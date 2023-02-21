@@ -182,6 +182,7 @@ text-decoration: none;
     .col-md-3 .btn-primary {
     background-color: #dc1414;
 
+
     border: none
     }
 
@@ -198,24 +199,110 @@ text-decoration: none;
     }
 
 
-    /* Footer */
-    .footer-links {
-        color: black;
-        width:100%;
-        height:20%;
-        position:absolute;
-        bottom:0;
-        left:0;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        list-style: none;
-        font-weight: 500;
-        padding-top: 10px;
-        background-color: white;
-      }
+   /* Newsletter section */
 
-      ul li {
-        margin-bottom: 10px;
-      }
+.newsletter {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
 
+label {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+input[type="email"]:focus {
+    border: 1px solid #cc0000;
+    outline: none;
+  }
+
+.input-group-append button {
+    background-color: #cc0000;
+    border: none;
+    color: #fff;
+    transition: 1s ease-in-out all;
+  }
+
+.input-group-append button:hover {
+    background-color: #990000;
+  }
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  /* Card with thank you message section  */
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-title {
+    display: inline-block;
+    align-self: center;
+}
+
+.card-body {
+    border: 5px solid black;
+}
+
+/* Scroll to top section */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    z-index: 9999;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Footer section */
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .footer-links {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+
+  .findInstructions{
+    display: block;
+    width: 115px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+  }

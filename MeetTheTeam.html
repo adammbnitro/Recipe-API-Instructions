@@ -13,13 +13,15 @@
   </head>
   <body>
 
+
     <header>
       <h1 class="title">Recipe Finder</h1><!--Page title-->
+      <h1 class="page-title">Recipe Finder</h1><!--Page title, add logo.-->
       <nav>
-          <ul class="nav-bar">
-              <li class="home-nav"><a href=index.html><span class="home-nav">Home</span></a></li>
-              <li><a href=videos.html><span class="videos-nav">Videos</span></a></li>
-              <li><a href=MeetTheTeam.html><span class="about-nav">About</span></a></li>
+          <ul>
+              <li class="home-nav"><a href=index.html><span class="home">Home</a></li></span>
+              <li><a href=videos.html>Videos</a></li>
+              <li class="about-nav"><a href=MeetTheTeam.html><span class="about">About</a></li>
           </ul>
       </nav>
     </header>
@@ -124,6 +126,36 @@
         </div>
       </main>
  
+
+<!-- Newsletter section -->
+
+<section class="newsletter">
+  <div class="container">
+      <h2 class="text-center mb-4">Subscribe to our newsletter for more tasty recipes!</h2>
+      <form>
+      <div class="form-row">
+          <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 form-group">
+          <label for="email-input" class="sr-only">Email address</label>
+          <div class="input-group">
+              <input type="email" class="form-control" id="email-input" placeholder="Enter your email address" required>
+              <div class="input-group-append">
+              <button class="btn btn-danger" type="submit">Subscribe</button>
+              </div>
+          </div>
+          </div>
+      </div>
+      </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 <!-- Scroll to top button section  -->
       
 <button class="scroll-to-top btn btn-danger rounded-circle" style="display: none;">
