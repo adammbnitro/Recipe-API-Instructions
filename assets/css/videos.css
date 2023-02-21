@@ -181,9 +181,24 @@ text-decoration: none;
     
     .col-md-3 .btn-primary {
     background-color: #dc1414;
-    border: none }
 
-/* Newsletter section */
+    border: none
+    }
+
+#video{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+=======
+    border: none;
+    }
+
+
+   /* Newsletter section */
 
 .newsletter {
     background-color: #f2f2f2;
@@ -267,7 +282,7 @@ h2{
 footer {
     font-family: 'Ubuntu', sans-serif;
   }
-  
+
   .footer-links {
     color: black;
     display: flex;
@@ -277,7 +292,7 @@ footer {
     font-weight: 500;
     padding-top: 10px;
   }
-  
+
   .findInstructions{
     display: block;
     width: 115px;
