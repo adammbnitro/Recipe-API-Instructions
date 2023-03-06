@@ -54,7 +54,7 @@ Licensed under the MIT license.
 
 We have used Bootstrap.
 
-The project has been deployed to GitHub Pages: https://github.com/
+The project has been deployed to GitHub Pages: https://adammbnitro.github.io/Recipe-API-Instructions/
 
 The application is interactive (in other words, accept and respond to user input).
 
